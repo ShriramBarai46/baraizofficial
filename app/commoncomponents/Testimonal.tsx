@@ -7,22 +7,22 @@ import Image from "next/image";
 
 const testimonials = [
   {
-    name: "Jane Doe",
+    name: "Rajesh",
     role: "Customer, celebrated a special occasion",
-    text: "Amazing team! Smiling, always nice to talk with, they always have the best recommendations for you, adapted to your taste!",
-    image: "/assets/customers/jane.jpg",
+    text: "Amazing team! Smiling, always nice to talk with, they always have the best recommendations for you, adapted to your taste! Must try their Pav Bhaji, it's absolutely delicious!",
+    image: "/assets/rajesh.jpg",
   },
   {
-    name: "John Smith",
+    name: "Priya",
     role: "Regular Customer",
-    text: "A truly fantastic experience! The flavors are rich, and the atmosphere is warm and welcoming.",
-    image: "/assets/customers/john.jpg",
+    text: "A truly fantastic experience! The flavors are rich, and the atmosphere is warm and welcoming. The Matka Dosa is a must-try, crisp and loaded with flavors!",
+    image: "/assets/priya.jpg",
   },
   {
-    name: "Alex Johnson",
+    name: "Arjun",
     role: "Food Blogger",
-    text: "Highly recommended for anyone who loves authentic street food flavors. Great place to relax and eat!",
-    image: "/assets/customers/alex.jpg",
+    text: "Highly recommended for anyone who loves authentic street food flavors. Their Kesar Pista Kulfi is the best I’ve ever had—creamy, rich, and full of flavor!",
+    image: "/assets/arjun.jpg",
   },
 ];
 
