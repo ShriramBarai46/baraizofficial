@@ -6,15 +6,19 @@ import Link from "next/link";
 
 // Contact Details
 const contactInfo = [
-  { id: 1, label: "📍 Address", value: "22 Sindi Colony, Sion, Mumbai - 400022" },
+  {
+    id: 1,
+    label: "📍 Address",
+    value: "22 Sindi Colony, Sion, Mumbai - 400022",
+  },
   { id: 2, label: "📞 Phone", value: "+91 9004093499" },
   { id: 3, label: "📧 Email", value: "baraiscafe33@gmail.com" },
 ];
 
 // Opening Hours
 const openingHours = [
-  { day: "Monday - Friday", hours: "8:00 AM - 10:00 PM" },
-  { day: "Saturday - Sunday", hours: "9:00 AM - 11:00 PM" },
+  { day: "Monday - Friday", hours: "5:00 AM - 11:00 PM" },
+  { day: "Saturday - Sunday", hours: "6:00 AM - 11:00 PM" },
 ];
 
 export default function FindUs() {
@@ -63,7 +67,9 @@ export default function FindUs() {
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
             >
-              <h3 className="text-xl font-semibold mb-[0.5rem]">{item.label}</h3>
+              <h3 className="text-xl font-semibold mb-[0.5rem]">
+                {item.label}
+              </h3>
               <p className="text-gray-600">{item.value}</p>
             </motion.div>
           ))}
@@ -71,30 +77,21 @@ export default function FindUs() {
       </div>
 
       {/* Google Maps Section with PIN */}
-      <div className="w-[90%] max-w-[120rem] mx-auto py-[5rem]">
-        <motion.h2
-          className="text-3xl md:text-4xl font-bold text-center mb-[2rem]"
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          📍 Our Location
-        </motion.h2>
 
-        <motion.div
-          className="w-full h-[300px] md:h-[500px] rounded-lg overflow-hidden shadow-lg border border-gray-200"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-        >
-          <iframe
-            className="w-full h-full"
-            src="https://www.google.com/maps/embed/v1/place?q=22+Sindi+Colony,+Sion,+Mumbai+-+400022&key=YOUR_GOOGLE_MAPS_API_KEY"
-            allowFullScreen
-            loading="lazy"
-          ></iframe>
-        </motion.div>
-      </div>
+      <motion.div
+        className="w-full h-[300px] md:h-[500px] rounded-lg overflow-hidden shadow-lg border border-gray-200"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
+        <iframe
+          className="w-full h-full"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15079.82963324266!2d72.8598677!3d19.0402072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c900c14676d1%3A0x2d01f84cbb9d1786!2sBARAI&#39;S%20CAFE!5e0!3m2!1sen!2sin!4v1710100000000"
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </motion.div>
 
       {/* Opening Hours */}
       <div className="w-[90%] max-w-[120rem] mx-auto py-[5rem]">

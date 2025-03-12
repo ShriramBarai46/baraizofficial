@@ -17,7 +17,7 @@ export default function CorporateCateringPage() {
 
       <div className="w-[90%] max-w-5xl mx-auto">
         <Image
-          src="/assets/corporate-catering.jpg"
+          src="/assets/corporate-catering.webp"
           alt="Corporate Catering"
           width={800}
           height={450}

@@ -10,7 +10,7 @@ const services = [
     title: "Wedding Catering",
     description:
       "Make your special day unforgettable with our premium wedding catering services.",
-    image: "/assets/baraireden.jpg",
+    image: "/assets/wedding-catering.jpg",
     link: "/services/wedding-catering",
   },
   {
@@ -18,7 +18,7 @@ const services = [
     title: "Corporate Catering",
     description:
       "Professional catering for business events, corporate meetings, and large gatherings.",
-    image: "/assets/reservation-page.jpg",
+    image: "/assets/corporate-catering.webp",
     link: "/services/corporate-catering",
   },
   {
@@ -26,7 +26,7 @@ const services = [
     title: "Birthday Catering",
     description:
       "Celebrate birthdays with delicious and customizable catering options.",
-    image: "/assets/reservation-page.jpg",
+    image: "/assets/birthday-catering.jpg",
     link: "/services/birthday-catering",
   },
 ];

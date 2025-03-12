@@ -1,4 +1,4 @@
-import { SpecialProducts } from "./commoncomponents/Specials";
+
 import { MenuOrderSection } from "./commoncomponents/Menu";
 import "./globals.css";
 // import { TomatoSauceSection } from "./commoncomponents/OrderDelivery";
@@ -9,9 +9,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <SpecialProducts />
       <MenuOrderSection />
-
       <TestimonialSection />
     </>
   );

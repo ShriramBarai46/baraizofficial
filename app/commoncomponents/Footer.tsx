@@ -3,7 +3,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import { FaFacebook, FaTwitter, FaInstagram, FaYoutube, FaGlobe } from "react-icons/fa";
-import { Button } from "@/components/ui/button";
+import LogoImg from "@/public/assets/baraireden.jpg";
+
 
 export function Footer() {
   return (
@@ -11,7 +12,7 @@ export function Footer() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-8">
         {/* Logo */}
         <div className="md:col-span-1">
-          <Image src="/logo.png" width={120} height={40} alt="Barai Cafe Logo" />
+          <Image src={LogoImg} width={120} height={40} alt="Barai Cafe Logo" />
         </div>
 
         {/* About Section */}
@@ -57,14 +58,14 @@ export function Footer() {
             <FaInstagram className="hover:text-pink-500 cursor-pointer" />
             <FaYoutube className="hover:text-red-500 cursor-pointer" />
           </div>
-          <div className="mt-4 flex flex-col space-y-2">
+          {/* <div className="mt-4 flex flex-col space-y-2">
             <Button variant="outline" className="flex items-center gap-2">
               <Image src="/appstore.png" width={120} height={40} alt="App Store" />
             </Button>
             <Button variant="outline" className="flex items-center gap-2">
               <Image src="/playstore.png" width={120} height={40} alt="Google Play" />
             </Button>
-          </div>
+          </div> */}
         </div>
       </div>
 

@@ -35,12 +35,12 @@ const Counter: React.FC<CounterProps> = ({ to }) => {
 
 // Team Members or Achievements Data
 const highlights = [
-  { id: 1, title: "Best Street Café Award", image: "/assets/baraireden.jpg" },
-  { id: 2, title: "100+ Happy Customers", image: "/assets/baraireden.jpg" },
+  { id: 1, title: "Best Street Café Award", image: "/assets/best-food-award.jpg" },
+  { id: 2, title: "100+ Happy Customers", image: "/assets/pav_bhaji_plate.jpg" },
   {
     id: 3,
     title: "Fresh & Organic Ingredients",
-    image: "/assets/baraireden.jpg",
+    image: "/assets/fresh_ingredient.jpg",
   },
 ];
 
@@ -169,9 +169,9 @@ export default function AboutUs() {
                 alt={item.title}
                 width={500}
                 height={300}
-                className="w-full h-[10rem] sm:h-[12rem] md:h-[15rem] object-cover"
+                className="w-full h-[10rem] sm:h-[15rem] md:h-[30rem] object-cover"
               />
-              <div className="absolute bottom-0 w-full bg-black/70 text-white text-center p-[0.5rem] sm:p-[1rem]">
+              <div className="absolute bottom-0 w-full bg-green-500 text-white text-center p-[0.5rem] sm:p-[1rem]">
                 <h3 className="text-base sm:text-lg md:text-xl font-semibold">
                   {item.title}
                 </h3>
