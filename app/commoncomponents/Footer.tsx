@@ -17,6 +17,7 @@ export function Footer() {
 
         {/* About Section */}
         <div>
+          
           <h4 className="text-lg font-bold">ABOUT BARAI'Z</h4>
           <ul className="mt-2 space-y-2 text-sm text-gray-700">
             <li><Link href="#">Who We Are</Link></li>
